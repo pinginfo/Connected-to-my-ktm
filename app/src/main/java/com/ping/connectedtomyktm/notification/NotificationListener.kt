@@ -2,7 +2,6 @@ package com.ping.connectedtomyktm.notification
 
 import android.service.notification.NotificationListenerService
 import android.service.notification.StatusBarNotification
-import com.ping.connectedtomyktm.MainActivity
 import com.ping.connectedtomyktm.bluetooth.Communication
 import com.ping.connectedtomyktm.tools.ContextObject
 
@@ -29,6 +28,7 @@ class NotificationListener: NotificationListenerService() {
 
     init {
         modules[OsmAnd.getPackageName()] = OsmAnd()
+        modules[OsmAnd.getPackageNamePlus()] = OsmAnd()
         modules[K9.namePackage] = K9()
         this.communication = Communication
     }

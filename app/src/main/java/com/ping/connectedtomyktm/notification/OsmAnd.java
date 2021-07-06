@@ -60,6 +60,10 @@ public class OsmAnd implements Module {
         return "net.osmand";
     }
 
+    public static String getPackageNamePlus() {
+        return "net.osmand.plus";
+    }
+
     public SendingObject getDataPosted(StatusBarNotification sbn) {
         // TODO: Need to be clean and tested
         Bundle bundle2 = sbn.getNotification().extras;

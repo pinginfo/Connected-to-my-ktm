@@ -14,7 +14,7 @@ This project is completely open-source and does not contain any [**Anti-Features
 | Application | Version | compatible |
 | --- | --- | --- |
 | OsmAnd | 3.6.3 | ✅ |
-| OsmAnd | 3.9 | ❔ |
+| OsmAnd+ | 3.9.10 | ✅ |
 
 ## Screenshots
 <img src="screenshots/home.png" alt="home" width="200"/>
