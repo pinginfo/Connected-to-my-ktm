@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Connected to my ktm</string>
+    <string name="no_permission">No permission to read notifications</string>
+    <string name="edit_permission">Edit permission</string>
+    <string name="open_notification_permission">Open notification permission</string>
+    <string name="home">Home</string>
+    <string name="preview">Preview</string>
+    <string name="testing">Testing</string>
+    <string name="settings">Settings</string>
+    <string name="motorcycle_connected">Motorcycle is connected !</string>
+    <string name="motorcycle_disconnected">Motorcycle is disconnected !</string>
+    <string name="attempt_connect">Attempt to connect</string>
+    <string name="connection_info">press the motorcycle to start/end the connection</string>
+    <string name="modules">Modules</string>
+    <string name="language">Language</string>
+    <string name="eta">ETA</string>
+    <string name="dist_2_target">Dist to Target</string>
+    <string name="turn_dist">Turn distance</string>
+    <string name="turn_dist_unit">Turn distance unit</string>
+    <string name="turn_info">Turn info</string>
+    <string name="turn_road">Turn road</string>
+    <string name="turn_icon">Turn Icon</string>
+    <string name="eta_default">23:59</string>
+    <string name="dist_2_target_default">27km, 32min</string>
+    <string name="turn_dist_default">535</string>
+    <string name="turn_dist_unit_default">m</string>
+    <string name="turn_info_default">2 exit</string>
+    <string name="turn_road_default">Queen Victoria St</string>
+    <string name="send_these_value">Send these values</string>
+    <!-- OsmAnd strings (https://github.com/osmandapp/OsmAnd/blob/master/OsmAnd/res/values/strings.xml) -->
+    <string name="route_tr">Turn right and go</string>
+    <string name="route_tshr">Turn sharply right and go</string>
+    <string name="route_tslr">Turn slightly right and go</string>
+    <string name="route_kr">Keep right and go</string>
+    <string name="route_tl">Turn left and go</string>
+    <string name="route_tshl">Turn sharply left and go</string>
+    <string name="route_tsll">Turn slightly left and go</string>
+    <string name="route_kl">Keep left and go</string>
+    <string name="route_tu">Make U-turn and go</string>
+    <string name="route_head">Head</string>
+    <string name="route_roundabout_short">Take %1$d exit and go</string>
+</resources>

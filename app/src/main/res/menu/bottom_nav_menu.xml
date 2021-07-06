@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_motorbike"/>
+    <item
+        android:id="@+id/preview"
+        android:title="@string/preview"
+        android:icon="@drawable/ic_display_frame"/>
+    <item
+        android:id="@+id/testing"
+        android:title="@string/testing"
+        android:icon="@drawable/ic_testing"/>
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"/>
+</menu>

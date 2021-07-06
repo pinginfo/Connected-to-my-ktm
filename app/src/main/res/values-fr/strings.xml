@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Connected to my ktm</string>
+    <string name="no_permission">Pas la permission pour lire les notifications</string>
+    <string name="edit_permission">Modifier la permission</string>
+    <string name="open_notification_permission">Ouvrir la gestion des permission pour les notifications</string>
+    <string name="home">Accueil</string>
+    <string name="preview">Prévisualisation</string>
+    <string name="testing">Tests</string>
+    <string name="settings">Parametres</string>
+    <string name="motorcycle_connected">La moto est connecté !</string>
+    <string name="motorcycle_disconnected">La moto est déconnecté !</string>
+    <string name="attempt_connect">Connexion en cours</string>
+    <string name="connection_info">Appuyer sur la moto pour lancer/terminer la connexion</string>
+    <string name="modules">Modules</string>
+    <string name="language">Langage</string>
+    <string name="eta">ETA</string>
+    <string name="dist_2_target">Distance de l\'arrivée</string>
+    <string name="turn_dist">Tourner à</string>
+    <string name="turn_dist_unit">Tourner à (unité)</string>
+    <string name="turn_info">Tourner info</string>
+    <string name="turn_road">Tourner nom route</string>
+    <string name="turn_icon">Tourner icone</string>
+    <string name="eta_default">23:59</string>
+    <string name="dist_2_target_default">27km, 32min</string>
+    <string name="turn_dist_default">535</string>
+    <string name="turn_dist_unit_default">m</string>
+    <string name="turn_info_default">2 sortie</string>
+    <string name="turn_road_default">Rue de lausanne</string>
+    <string name="send_these_value">Envoyer ses valeurs</string>
+    <!-- OsmAnd strings (https://github.com/osmandapp/OsmAnd/blob/master/OsmAnd/res/values-fr/strings.xml) -->
+    <string name="route_tr">Tournez à droite et continuez</string>
+    <string name="route_tshr">Tournez franchement à droite et continuez</string>
+    <string name="route_tslr">Tournez légèrement vers la droite et continuez</string>
+    <string name="route_kr">Serrez à droite et continuez</string>
+    <string name="route_tl">Tournez à gauche et continuez</string>
+    <string name="route_tshl">Tournez franchement à gauche et continuez</string>
+    <string name="route_tsll">Tournez légèrement vers la gauche et continuez</string>
+    <string name="route_kl">Serrez à gauche et continuez</string>
+    <string name="route_tu">Faites demi-tour et continuez</string>
+    <string name="route_head">Avancez</string>
+    <string name="route_roundabout_short">Prenez la sortie %1$d</string>
+</resources>
