@@ -27,6 +27,7 @@
     <string name="turn_info_default">2 sortie</string>
     <string name="turn_road_default">Rue de lausanne</string>
     <string name="send_these_value">Envoyer ses valeurs</string>
+    <string name="roundabout_exit">%1$d sortie</string>
     <!-- OsmAnd strings (https://github.com/osmandapp/OsmAnd/blob/master/OsmAnd/res/values-fr/strings.xml) -->
     <string name="route_tr">Tournez à droite et continuez</string>
     <string name="route_tshr">Tournez franchement à droite et continuez</string>
@@ -39,4 +40,5 @@
     <string name="route_tu">Faites demi-tour et continuez</string>
     <string name="route_head">Avancez</string>
     <string name="route_roundabout_short">Prenez la sortie %1$d</string>
+    <string name="arrived_at_destination">Vous êtes arrivés.</string>
 </resources>

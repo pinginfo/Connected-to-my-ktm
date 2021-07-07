@@ -27,6 +27,7 @@
     <string name="turn_info_default">2 exit</string>
     <string name="turn_road_default">Queen Victoria St</string>
     <string name="send_these_value">Send these values</string>
+    <string name="roundabout_exit">%1$d exit</string>
     <!-- OsmAnd strings (https://github.com/osmandapp/OsmAnd/blob/master/OsmAnd/res/values/strings.xml) -->
     <string name="route_tr">Turn right and go</string>
     <string name="route_tshr">Turn sharply right and go</string>
@@ -39,4 +40,5 @@
     <string name="route_tu">Make U-turn and go</string>
     <string name="route_head">Head</string>
     <string name="route_roundabout_short">Take %1$d exit and go</string>
+    <string name="arrived_at_destination">You have arrived.</string>
 </resources>

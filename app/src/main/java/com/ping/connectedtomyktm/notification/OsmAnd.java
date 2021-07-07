@@ -65,14 +65,14 @@ public class OsmAnd implements Module {
     }
 
     public SendingObject getDataPosted(StatusBarNotification sbn) {
-        // TODO: Need to be clean and tested
-        Bundle bundle2 = sbn.getNotification().extras;
-        String[] title = bundle2.getString("android.title").split("•");
+        Bundle bundle = sbn.getNotification().extras;
+        String[] title = bundle.getString("android.title").split("•");
         String[] bigText;
         if (title.length > 1) {
-            bigText = bundle2.getString("android.bigText").substring(title[1].trim().length()).split("\n");
+            int offset = bundle.getString("android.bigText").indexOf(title[1]) + title[1].length();
+            bigText = bundle.getString("android.bigText").substring(offset).split("\n");
         } else {
-            bigText = bundle2.getString("android.bigText").split("\n");
+            bigText = bundle.getString("android.bigText").split("\n");
         }
         String[] otherValues = bigText.length > 1 ? bigText[1].split("•") : bigText[0].split("•");
         SendingObject result = new SendingObject();
@@ -84,6 +84,13 @@ public class OsmAnd implements Module {
         String dist = otherValues[0].trim();
         String remainingTime = otherValues.length > 1 ? otherValues[1].trim() : "";
         String arrivalTime = otherValues.length > 2 ? otherValues[2].trim() : "";
+        String actualSpeed = otherValues.length > 3 ? otherValues[3].trim() : "";
+        turnInfo = actualSpeed;
+
+        if (turnIcon.startsWith("RAB_SECT_")) {
+            int exit = (Integer.parseInt(turnIcon.split("_")[2]) - 2) / 2;
+            turnInfo = String.format(this.contextObject.getContext().getString(R.string.roundabout_exit), exit);
+        }
 
         result.setEta(arrivalTime);
         result.setDist2Target(dist + ", " + remainingTime);
@@ -91,12 +98,19 @@ public class OsmAnd implements Module {
         result.setTurnDistUnit(dist2Target.split(" ").length > 1 ? dist2Target.split(" ")[1] : "");
         result.setTurnRoad(turnRoad);
         result.setTurnIcon(turnIcon);
+        result.setTurnInfo(turnInfo);
         result.setUiContext("guidance");
         return result;
     }
 
     public SendingObject getDataRemoved(StatusBarNotification sbn) {
         SendingObject result = new SendingObject();
+
+        result.setTurnDist("0");
+        result.setTurnDistUnit("m");
+        result.setTurnRoad(this.contextObject.getContext().getString(R.string.arrived_at_destination));
+        result.setTurnIcon(SendingObject.TurnIcon.END.name());
+
         return result;
     }
 }
